@@ -1,8 +1,8 @@
 .btn {
     border-radius: 25px;
-    @include primary-gradient;
     color: white;
     border: none;
 
+    @include primary-gradient;
     @include drop-shadow;
 }
