@@ -10,3 +10,7 @@
     font-weight: $font-weight-bold;
     font-family: $font_family_roboto;
 }
+
+@mixin primary-gradient {
+    background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+}
