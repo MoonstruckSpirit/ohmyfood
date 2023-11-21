@@ -295,7 +295,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .likeCheckbox:checked + .likeContainer .heart-icon-solid {
-  animation: like 0.2s cubic-bezier(0.87, 0.01, 0.38, 1.01) forwards;
+  animation: like 0.7s cubic-bezier(0.87, 0.01, 0.38, 1.01) forwards;
 }
 .likeCheckbox:checked + .likeContainer .heart-icon {
   animation: like--BG 1s ease forwards;
@@ -308,7 +308,15 @@ a, a:visited, a:hover, a:active {
 }
 
 @keyframes like {
-  to {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
     opacity: 1;
     transform: scale(1);
   }

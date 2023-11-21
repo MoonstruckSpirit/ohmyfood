@@ -37,7 +37,7 @@
   .likeCheckbox {
     &:checked + .likeContainer {
       .heart-icon-solid {
-        animation: like 0.2s cubic-bezier(.87, .01, .38, 1.01) forwards;
+        animation: like 0.7s cubic-bezier(.87, .01, .38, 1.01) forwards;
       }
   
       .heart-icon {
@@ -58,11 +58,22 @@
   
 
   @keyframes like {
-    to {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  
+    100% {
       opacity: 1;
       transform: scale(1);
     }
   }
+  
   
   @keyframes like--BG {
     from {
