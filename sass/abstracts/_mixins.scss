@@ -11,6 +11,13 @@
     font-family: $font_family_roboto;
 }
 
+@mixin h3-like {
+    font-family: $font_family_roboto;
+    font-size: $font-size-small-header;
+    font-weight: $font-weight-bold;
+    color: white;
+}
+
 @mixin primary-gradient {
     background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 }
