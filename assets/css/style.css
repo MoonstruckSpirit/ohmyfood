@@ -247,6 +247,9 @@ a, a:visited, a:hover, a:active {
   background: linear-gradient(0deg, #9456DC 0%, #FF79DA 100%);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+.btn:hover {
+  background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
+}
 
 .card, .card--isWhite {
   border-radius: 20px;
