@@ -105,6 +105,39 @@ a, a:visited, a:hover, a:active {
   color: #353535;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #353535;
+  padding: 22px 25px;
+  color: white;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer__nav--bold {
+  font-weight: 500;
+}
+.footer__nav li {
+  display: flex;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.footer__nav .fa-solid {
+  width: 14px;
+}
+.footer__logo {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -168,7 +201,7 @@ a, a:visited, a:hover, a:active {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding: 0 18px 0 17px;
+  padding: 54px 18px 66px 17px;
   background-color: #F6F6F6;
 }
 .restaurants__card {
