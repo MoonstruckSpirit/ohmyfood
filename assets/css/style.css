@@ -184,7 +184,7 @@ a, a:visited, a:hover, a:active {
   display: flex;
   justify-content: space-between;
 }
-.restaurants__card__content-- .restaurants__card__content--text {
+.restaurants__card__content--text {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -207,6 +207,86 @@ a, a:visited, a:hover, a:active {
   background-color: white;
 }
 
+.fa-solid {
+  position: relative;
+}
+
+.fa-regular {
+  position: absolute;
+}
+
+.heart-icon,
+.heart-icon-solid {
+  font-size: 30px;
+}
+
+.likeCheckbox:not(:checked) + .likeContainer:hover {
+  animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%, 50%, 100% {
+    transform: scale(1, 1);
+  }
+  30%, 80% {
+    transform: scale(0.92, 0.95);
+  }
+}
+.heart-icon-solid {
+  transform-origin: bottom;
+  transform: scale(0);
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#likeCheckbox {
+  display: none;
+}
+
+.likeCheckbox:checked + .likeContainer .heart-icon-solid {
+  animation: like 0.2s cubic-bezier(0.87, 0.01, 0.38, 1.01) forwards;
+}
+.likeCheckbox:checked + .likeContainer .heart-icon {
+  animation: like--BG 1s ease forwards;
+}
+.likeCheckbox:not(:checked) + .likeContainer .heart-icon-solid {
+  animation: unlike 0.5s ease forwards;
+}
+.likeCheckbox:not(:checked) + .likeContainer .heart-icon {
+  animation: nounlike 1s ease forwards;
+}
+
+@keyframes like {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes like--BG {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes unlike {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes unlike--BG {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 body {
   width: 100%;
   max-width: 1440px;
