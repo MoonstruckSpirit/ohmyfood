@@ -7,14 +7,12 @@
 @import "sass/components/buttons";
 @import "sass/components/card";
 @import "sass/components/like";
-@import "sass/components/loader";
+// @import "sass/components/loader";
 
 
 
 body {
     width: 100%;
-    max-width: $max-width;
-    min-width: $min-width;
-
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
+ 
