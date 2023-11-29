@@ -13,7 +13,9 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -315,7 +317,8 @@ a, a:visited, a:hover, a:active {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .restaurants__cards--card--img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 251px;
   border-radius: 15px 15px 0 0;
   width: 100%;
@@ -347,7 +350,8 @@ a, a:visited, a:hover, a:active {
 
 .hero__img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
@@ -391,6 +395,7 @@ a, a:visited, a:hover, a:active {
 }
 .menu__cta {
   padding: 16px 49px;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
 }
@@ -519,10 +524,7 @@ a, a:visited, a:hover, a:active {
   -webkit-text-fill-color: transparent;
 }
 
-.like__input-1 {
-  display: none;
-}
-.like__checkbox:not(:checked) + .like__container .heart-icon:hover {
+.like__checkbox:not(:checked) .like:hover {
   animation: 1.5s ease 0s infinite beat;
 }
 .like__checkbox:checked + .like__container .heart-icon-solid {
@@ -634,5 +636,3 @@ body {
   width: 100%;
   scroll-behavior: smooth;
 }
-
-/*# sourceMappingURL=style.css.map */
