@@ -370,7 +370,7 @@ a, a:visited, a:hover, a:active {
 @media (min-width: 1440px) {
   .menu {
     margin: -50px 192px 0 193px;
-    padding: 50px 120px;
+    padding: 50px 210px;
     gap: 40px;
   }
 }
@@ -378,7 +378,6 @@ a, a:visited, a:hover, a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 @media (min-width: 1440px) {
   .menu__header {
@@ -431,6 +430,7 @@ a, a:visited, a:hover, a:active {
 .items__dish--isColumn {
   display: flex;
   flex-direction: column;
+  flex: 2;
 }
 
 .dish__addtocart {
@@ -440,6 +440,7 @@ a, a:visited, a:hover, a:active {
   margin-right: -4em;
   margin-left: 1em;
   display: flex;
+  flex: 0;
   justify-content: center;
   align-items: center;
   visibility: hidden;
