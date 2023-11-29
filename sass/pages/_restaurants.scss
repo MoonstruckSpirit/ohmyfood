@@ -80,11 +80,12 @@
 .items {
     &__dish {
 
+        height: 69px;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-        padding: 15px;
+
         overflow: hidden;
 
         
@@ -93,29 +94,48 @@
             display: flex;
             flex-direction: column;
             flex: 2;
+            padding: 15px;
         }
+
+
     }
 }
 
 .dish {
     &__addtocart {
-        height: 100%;
-        background-color: #99e2d0;
-        width: 4em;
-        margin-right: -4em;
-        margin-left: 1em;
+
         display: flex;
-        flex: 0;
+
         justify-content: center;
         align-items: center;
-        visibility: hidden;
-        transition-duration: 1500ms;
+
+
+        background-color: #99e2d0;
+
+        height: 100%;
+        width: 5em;
+        margin-right: -5em;
+
+
+        padding: 0 0 0 0; 
+        border-radius: 0 15px 15px 0;
+
+        // visibility: hidden;
+        transition: 1000ms ease;
+
+        &__ico {
+            color: white;
+        }
     }
 
     .items__dish:hover &__addtocart {
         margin-right: 0em;
         visibility: visible;
 
+    }
+
+    &__price {
+        padding: 0 15px 15px 0;
     }
 }
 

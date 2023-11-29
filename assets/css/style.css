@@ -420,35 +420,41 @@ a, a:visited, a:hover, a:active {
 }
 
 .items__dish {
+  height: 69px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 15px;
   overflow: hidden;
 }
 .items__dish--isColumn {
   display: flex;
   flex-direction: column;
   flex: 2;
+  padding: 15px;
 }
 
 .dish__addtocart {
-  height: 100%;
-  background-color: #99e2d0;
-  width: 4em;
-  margin-right: -4em;
-  margin-left: 1em;
   display: flex;
-  flex: 0;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-  transition-duration: 1500ms;
+  background-color: #99e2d0;
+  height: 100%;
+  width: 5em;
+  margin-right: -5em;
+  padding: 0 0 0 0;
+  border-radius: 0 15px 15px 0;
+  transition: 1000ms ease;
+}
+.dish__addtocart__ico {
+  color: white;
 }
 .items__dish:hover .dish__addtocart {
   margin-right: 0em;
   visibility: visible;
+}
+.dish__price {
+  padding: 0 15px 15px 0;
 }
 
 .starter > li {
