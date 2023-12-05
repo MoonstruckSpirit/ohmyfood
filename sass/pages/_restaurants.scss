@@ -103,6 +103,8 @@
 
     .dish {
 
+
+
         &__title,
         &__subtitle {
             overflow: hidden;
@@ -141,14 +143,17 @@
             &__ico {
                 color: white;
                 font-size: 25px;
-            }
-        }
-
-        .items__dish:hover &__addtocart {
-            margin-right: 0em;
+            }   
         }
     }
+    
+    .items__dish:hover .dish__addtocart {
+    margin-right: 0em;
+    }
 }
+
+
+
 
 // Animations
 // iterates through 0,1,2;
@@ -161,3 +166,4 @@
         @include appearAnim($i * 0.7s);
     }
 }
+

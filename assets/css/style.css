@@ -456,7 +456,7 @@ a, a:visited, a:hover, a:active {
   color: white;
   font-size: 25px;
 }
-.items__dish:hover .menu .dish__addtocart {
+.menu .items__dish:hover .dish__addtocart {
   margin-right: 0em;
 }
 
